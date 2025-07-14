@@ -1,0 +1,19 @@
+[project]
+name = "mysql-wrapper"
+version = "0.1.0"
+description = "A lightweight wrapper around the Python MySQL connector"
+authors = [
+    { name = "Justin Neil", email = "justin.neil2@gmail.com" }
+]
+dependencies = [
+    "mysql-connector-python>=8.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "black"
+]
+
+[tool.uv]
