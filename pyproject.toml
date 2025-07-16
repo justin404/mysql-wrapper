@@ -1,6 +1,6 @@
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+#[build-system]
+#requires = ["setuptools>=61.0"]
+#build-backend = "setuptools.build_meta"
 
 [project]
 name = "mysql-wrapper"
@@ -12,7 +12,9 @@ authors = [
 ]
 readme = "README.md"
 dependencies = [
-    "mysql-connector-python>=8.0"
+    "mysql-connector-python>=8.0",
+    "jsonpath-ng",
+    "jproperties"
 ]
 
 [project.optional-dependencies]
